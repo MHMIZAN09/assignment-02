@@ -45,11 +45,29 @@ class CourseCard extends StatelessWidget {
               children: [
                 Text(
                   batch,
-                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
 
-                Text(seats, style: TextStyle(fontSize: 12, color: Colors.blue)),
-                Text(days, style: TextStyle(fontSize: 12, color: Colors.red)),
+                Text(
+                  seats,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Text(
+                  days,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.red,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
               ],
             ),
           ),
@@ -79,7 +97,10 @@ class CourseCard extends StatelessWidget {
                 ),
               ),
               onPressed: () {},
-              child: Text("বিস্তারিত দেখুন →"),
+              child: Text(
+                "বিস্তারিত দেখুন →",
+                style: TextStyle(color: Colors.black),
+              ),
             ),
           ),
         ],
